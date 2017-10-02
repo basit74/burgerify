@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Burger Menu :: DEMO</title>
+
+	<link rel="stylesheet" type="text/css" href="css/burgerify.css" media="all" />
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="img/list-icon.png" alt="" width="30" height="30" class="menuBtn" data-target="#swipeNav1" style="display:block;margin:20px"/>
+			</div>
+	
+			<div class="col-sm-8">
+				<div class="blue-box">
+					<nav id="swipeNav1" class="nav-burger">
+						<a class="close-button">X</a>
+						<ul>
+							<li><a >Aktionen</a></li>
+							<li><a>Outlet</a></li>
+							<li><a >Deals</a></li>
+							<li><a >Travel</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery-burgerify.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$(".menuBtn").burgerify()
+		});
+	</script>
+
+</body>
+</html>
